@@ -3,31 +3,193 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Landing/Homepage | HerbKingz</title>
+  <title>HerbKingz – UK Medical Cannabis Access & Info</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #1b4332;
+      color: #fff;
+      padding: 1em 0;
+    }
+
+    .header-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1em;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1em;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #2d6a4f, #1b4332);
+      color: #fff;
+      padding: 4em 1em;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+
+    .hero a {
+      background: #95d5b2;
+      color: #1b4332;
+      padding: 0.8em 2em;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #74c69d;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 3em auto;
+      padding: 0 1em;
+    }
+
+    .content h2 {
+      color: #1b4332;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 2em;
+    }
+
+    .card {
+      background: #fff;
+      flex: 1 1 45%;
+      padding: 2em;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2f5d3d;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1em;
+      color: #40916c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3em;
+      padding: 2em;
+      background: #d8f3dc;
+      border-radius: 10px;
+    }
+
+    .cta a {
+      background: #1b4332;
+      color: #fff;
+      padding: 0.75em 1.5em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #1b4332;
+      color: #fff;
+      text-align: center;
+      padding: 2em 1em;
+      margin-top: 4em;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <div class="container header-container">
+    <div class="header-container">
       <h1 class="logo">🌿 HerbKingz</h1>
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="wiki.html">Wiki</a>
         <a href="access.html">Access</a>
+        <a href="store.html">Store</a>
         <a href="forum.html">Forum</a>
         <a href="signup.html">Sign Up</a>
-        <a href="signin.html">Sign In</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <h2>Landing/Homepage</h2>
-    <p>This is the landing/homepage page for HerbKingz. Content coming soon.</p>
-  </main>
+  <section class="hero">
+    <h1>Welcome to HerbKingz</h1>
+    <p>The UK's trusted hub for medical cannabis education, access, and patient community.</p>
+    <a href="signup.html">Join Our Community</a>
+  </section>
+
+  <section class="content">
+    <h2>About HerbKingz</h2>
+    <p>HerbKingz empowers UK patients with clear, honest, and practical information about medical cannabis. From finding the right clinic or pharmacy, to understanding strains, oils, and product types — we’ve got you covered. We advocate for safe, ethical, and legal access to plant-based treatment for those who need it most.</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🌱 Cannabis Wiki</h3>
+        <p>Learn about cannabinoids, medical strains, terpenes, and how cannabis interacts with the body. Straightforward and verified information for all patients.</p>
+        <a href="wiki.html">Visit the Wiki →</a>
+      </div>
+      <div class="card">
+        <h3>🏥 Clinic & Pharmacy Access</h3>
+        <p>Explore UK-based medical cannabis clinics, see what they charge, what they prescribe, and which pharmacies stock your medicine right now.</p>
+        <a href="access.html">Check Access →</a>
+      </div>
+      <div class="card">
+        <h3>🛒 Herbal Store</h3>
+        <p>View recommended oils, capsules, vaporizers, and CBD products from licensed UK partners. Transparent pricing. No gimmicks.</p>
+        <a href="store.html">Browse Store →</a>
+      </div>
+      <div class="card">
+        <h3>💬 Community Forum</h3>
+        <p>Join the HerbKingz forum to connect with others using cannabis for chronic pain, anxiety, epilepsy, and more. Learn from lived experiences.</p>
+        <a href="forum.html">Visit Forum →</a>
+      </div>
+    </div>
+
+    <div class="cta">
+      <h3>Get Started Today</h3>
+      <p>Signing up gives you access to forum discussions, alerts on pharmacy stock, and educational tools.</p>
+      <a href="signup.html">Create Your Free Account</a>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 HerbKingz • All rights reserved.</p>
+    <p>&copy; 2025 HerbKingz • Knowledge is medicine • All content is for informational purposes only.</p>
   </footer>
+
 </body>
 </html>
